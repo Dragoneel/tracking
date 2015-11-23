@@ -1,0 +1,117 @@
+<html style="" dir="ltr" class="ltr js touch localstorage no-ios" lang="en">
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   
+   <title>INFO921</title>
+</head>
+<body>
+
+<div class="topLinks">			
+								
+	<span class="title">
+		<a class="ajax-ajaxlogin cboxElement" href="#ajax-ajaxlogin" onclick="return false;"><i class="zmdi zmdi-account zmdi-hc-fw">&nbsp;</i>Connect</a> | 
+		<a class="ajax-ajaxlogin cboxElement" href="#ajax-ajaxlogin" onclick="return false;"><i class="zmdi zmdi-account zmdi-hc-fw">&nbsp;</i>Disconnect</a>
+	</span>
+</div>
+
+<div id="marq">
+	<marquee direction="left" scrollamount="4" >
+		 <b ><<<< Master2 Info921 Tp1 >>>></b>
+	</marquee>
+</div>
+
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='home.html'>Home</a></li>
+   <li style="color: #ffffff;" ><a style="color: #ffffff;background: #47c9af;"  href='#'>Add Package</a></li>
+   <li><a href='addDetails.html'>Add Details</a></li>
+   <li><a href='followDetails.html'>Follow Details</a></li>
+   <li><a href='allPackages.html'>All Packages</a></li>
+</ul>
+</div>
+ 
+ <div id='form'>
+ <form action="" method="post" name="add_package" onsubmit="return validate()">
+               <br/>
+			   
+			   <div class="hero-unit" data-bind="visible: DisplayContent" style="display:no"> 
+				<table class="table-condensed">
+					<tr height="75">
+						 <td class="input-label">
+							<label>Label:</label>
+							<span class="required-indicator">*</span>
+						</td>
+						 
+						 <td class="input-box" > 
+							 <div data-bind="visible: EditMode" class="edit-div">        
+								 <input id="label" type="text" data-bind="value: label" />								 
+							 </div>							 
+						 </td>
+						 
+						 <td class="input-label">
+						<label>Origin:</label>
+						<span class="required-indicator">*</span>
+					</td>
+					<td class="input-box">
+						<div data-bind="visible: EditMode" class="edit-div">
+							 <input id="origin" type="text" data-bind="value: origin " />
+						</div>
+						<div class="display-div" data-bind="text: origin, visible: DisplayMode "></div>
+					</td>
+					
+						 
+					</tr>
+					<tr height="75">
+					<td class="input-label">
+						<label>Value:</label>
+						<span class="required-indicator">*</span>
+					</td>
+					<td class="input-box">
+					<div data-bind="visible: EditMode" class="edit-div">
+						 <input id="value" type="text" data-bind="value: Value" />
+					</div>
+					</td>
+					<td class="input-label">
+						<label>Destination:</label>
+						<span class="required-indicator">*</span>
+					</td>
+					<td class="input-box">
+						<div data-bind="visible: EditMode" class="edit-div">
+							 <input id="destination" type="text" data-bind="value: destination " />
+						</div>
+						<div class="display-div" data-bind="text: destination, visible: DisplayMode "></div>
+					</td>
+					</tr>
+					
+					<tr height="75">					
+						<td class="input-label">
+								<label>Weight:</label>
+								<span class="required-indicator">*</span>
+							</td>
+							 <td class="input-box">
+								  <div data-bind="visible: EditMode" class="edit-div">
+									<input id="Weight" type="text" data-bind="value: Weight" />								
+								  </div>
+						</td>
+					</tr>
+					
+				</table>
+				</div>
+					  
+				<div style="clear:both"></div>
+				  <span data-bind="visible: EnableCreateButton">
+					<input id="btnAddPackage" type="submit" value="Add Package" 
+						 data-bind="click: CreateCustomer" class="btn btn-primary btn-medium" />
+				  </span>
+							   
+</form>
+</div>
+
+
+</body>
+<html>

@@ -1,0 +1,124 @@
+<html style="" dir="ltr" class="ltr js touch localstorage no-ios" lang="en">
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   
+   <title>INFO921</title>
+</head>
+<body>
+
+<div class="topLinks">			
+								
+	<span class="title">
+		<a class="ajax-ajaxlogin cboxElement" href="#ajax-ajaxlogin" onclick="return false;"><i class="zmdi zmdi-account zmdi-hc-fw">&nbsp;</i>Connect</a> | 
+		<a class="ajax-ajaxlogin cboxElement" href="#ajax-ajaxlogin" onclick="return false;"><i class="zmdi zmdi-account zmdi-hc-fw">&nbsp;</i>Disconnect</a>
+	</span>
+</div>
+
+<div id="marq">
+	<marquee direction="left" scrollamount="4" >
+		 <b ><<<< Master2 Info921 Tp1 >>>></b>
+	</marquee>
+</div>
+
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='home.html'>Home</a></li>
+   <li><a href='addPackage.html'>Add Package</a></li>
+   <li><a style="color: #ffffff;background: #47c9af;" href='#'>Add Details</a></li>
+   <li><a href='followDetails.html'>Follow Details</a></li>
+   <li><a href='allPackages.html'>All Packages</a></li>
+</ul>
+</div>
+ 
+ <div id='form'>
+ <form action="" method="post" name="add_package" onsubmit="return validate()">
+   <br/>
+   
+   <div class="hero-unit" data-bind="visible: DisplayContent" style="display:no"> 
+   <h2> <label height="25">Insert the new Coordinates of the Package:</label>	</h2>
+	<table class="table-condensed">
+		<tr height="75">
+			 <td class="input-label">
+				<label>Select a Package:</label>
+				<span class="required-indicator">*</span>
+			</td>
+			 
+			 <td class="input-box" > 
+				 <div data-bind="visible: EditMode" class="edit-div">        
+					 <select name="type">
+					   <option> Select One</option>
+					   <option >Laptop</option>
+					   <option>Phone</option>								   
+					 </select>								 
+				 </div>							 
+			 </td>
+		</tr>							
+		
+		<tr height="75">		
+									
+			 <td class="input-label">
+				<label>Latitude:</label>
+				<span class="required-indicator">*</span>
+			</td>
+			<td class="input-box">
+				<div data-bind="visible: EditMode" class="edit-div">
+					 <input id="latitude" type="text" data-bind="value: latitude " />
+				</div>
+				<div class="display-div" data-bind="text: latitude, visible: DisplayMode "></div>
+			</td>
+			
+			<td class="input-label">
+				<label>Longitude:</label>
+				<span class="required-indicator">*</span>
+			</td>
+			<td class="input-box">
+				<div data-bind="visible: EditMode" class="edit-div">
+					 <input id="longitude" type="text" data-bind="value: longitude " />
+				</div>
+				<div class="display-div" data-bind="text: longitude, visible: DisplayMode "></div>
+			</td>
+		
+			 
+		</tr>
+		<tr height="75">
+		<td class="input-label">
+			<label>Location:</label>
+			<span class="required-indicator">*</span>
+		</td>
+		<td class="input-box">
+		<div data-bind="visible: EditMode" class="edit-div">
+			 <input id="location" type="text" data-bind="value: location" />
+		</div>
+		</td>
+		<td class="input-label">
+			<label>State:</label>
+			<span class="required-indicator">*</span>
+		</td>
+		<td class="input-box">
+			<div data-bind="visible: EditMode" class="edit-div">
+				 <input id="state" type="text" data-bind="value: state " />
+			</div>
+			<div class="display-div" data-bind="text: state, visible: DisplayMode "></div>
+		</td>
+		</tr>
+							
+	</table>
+	</div>
+		  
+	<div style="clear:both"></div>
+	  <span data-bind="visible: EnableCreateButton">
+		<input id="btnAddPackage" type="submit" value="Add Details" 
+			 data-bind="click: CreateCustomer" class="btn btn-primary btn-medium" />
+	  </span>
+							   
+</form>
+</div>
+
+
+</body>
+<html>
