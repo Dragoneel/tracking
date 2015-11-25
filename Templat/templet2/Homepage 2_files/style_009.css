@@ -1,0 +1,72 @@
+.pavcarousel{
+	margin:0 40px;
+}
+.pavcarousel .carousel-control{
+	top: 50%;
+	margin: -10px 0;	
+	background: transparent;
+}
+.pavcarousel .carousel-control.left{
+	left: -40px;
+}
+.pavcarousel .carousel-control.right{
+	right: -40px;
+}
+
+.ves-brandlist-page .brand-logo {
+    float: none;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.ves-brandlist-page .brand-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ves-brandlist-page .layout-grid li, .ves-brandlist-page .layout-grid .brand-item{
+	float: left;
+}
+.ves-brandlist-page .pager .pages {display: block; margin-left: 10px	;}
+
+.venus-brand-menu .block-title {
+    background: #31a8d2 none repeat scroll 0 0 !important;
+    color: #ffffff;
+}
+.venus-brand-menu .block-content {
+    background: #444444 none repeat scroll 0 0;
+    border-radius: 0 !important;
+    padding: 0 10px 10px !important;
+}
+.venus-brand-menu li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 0;
+}
+.venus-brand-menu li a {
+    color: #eeeeee;
+}
+.venus-brand-menu li a:hover {
+    color: #31a8d2;
+}
+.venus-brand-menu li:first-child {
+    border: medium none;
+}
+.brand-showmore{
+    text-align: center;
+    margin: 10px 0px;
+}
+.brand-submit{
+    text-align: right;
+    margin: 10px;
+}
+.brand-showmore a,.brand-submit a{
+    background: rgb(49, 168, 210) none repeat scroll 0px 0px;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.brand-showmore a:hover,.brand-submit a:hover{
+    background: #444444 none repeat scroll 0px 0px;
+    
+}

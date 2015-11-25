@@ -1,0 +1,79 @@
+#about-us{display:block; width:100%; }
+#about-intro {overflow: hidden;}
+
+#about-us #about-intro{margin-bottom:50px; padding-bottom:50px; border-bottom:1px solid #ccc;}
+#about-us #about-intro div{}
+#about-us #about-intro div img.imgholder{padding:9px;}
+
+
+#statements #tabcontainer{}
+#statements #tabcontainer #tabnav{display:block; margin:0; padding:0; list-style:none; text-transform:uppercase; border-bottom:1px solid #CCCCCC;}
+#statements #tabcontainer #tabnav li{display:inline; margin:0 2px 0 0; padding:0;}
+#statements #tabcontainer #tabnav li:first-child{margin-left:0;}
+
+.skillset li {
+	border-bottom: 1px solid #eee; padding: 20px 0
+}
+
+#team{}
+#team h2{margin-bottom:40px;}
+#team ul{margin:0; padding:0; list-style:none;}
+#team ul li{}
+#team ul li .figure{}
+#team ul li .figure img{padding:9px; border:1px solid #ccc;}
+#team ul li .figure .figcaption{}
+#team ul li .figure .figcaption p{margin:15px 0 0 0; padding:0;}
+#team ul li .figure .figcaption .team_name{font-weight:600;}
+#team ul li .figure .figcaption .team_title{margin:0; font-size:11px; line-height:normal;}
+#team ul li .figure .figcaption .team_description{padding-top:15px; line-height:1.4em; border-top:1px solid #CCCCCC;}
+#team ul li .figure .figcaption ul{margin-top:15px;}
+#team ul li .figure .figcaption ul li{display:inline; margin:0 0 0 6px;}
+#team ul li .figure .figcaption ul li:first-child{margin-left:0;}
+#team ul li .figure .figcaption ul li a{}
+#team ul li .figure .figcaption ul li a img{padding:0; border:none;}
+
+#skillset{}
+
+#team ul li.one_quarter{width:23%;}
+#team ul li.one_half{width:48%;}
+#team li.one_half img{margin-bottom:15px;}
+#team li.one_half h2{margin:0 0 5px 0;}
+
+#client_logos li { margin-bottom: 20px; display: inline-block; margin-right: 5px;}
+
+.aboutus-border {
+	border: 1px solid #ddd;
+	padding:20px;
+	border-radius: 30px;
+}
+
+.article { border-bottom: 1px solid #eee; padding-top: 20px; padding-bottom: 20px;}
+
+#team p, 
+#skillset p,
+.skillset p,
+#statements p,
+#about-us p { margin-bottom:0;}
+ 
+#team .team_name{
+	margin-top: 10px;
+	font-weight: 600;
+} 
+
+.cms-aboutus1 .std .block .block-title,
+.cms-aboutus2 .std .block .block-title,
+.cms-aboutus3 .std .block .block-title,
+.cms-aboutus4 .std .block .block-title,
+.cms-aboutus5 .std .block .block-title {
+	text-transform: uppercase;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+.cms-aboutus1 .std .block .block-content,
+.cms-aboutus2 .std .block .block-content,
+.cms-aboutus3 .std .block .block-content,
+.cms-aboutus4 .std .block .block-content,
+.cms-aboutus5 .std .block .block-content {
+	padding: 0;
+}

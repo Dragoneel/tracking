@@ -1,0 +1,20 @@
+.wait{
+	background: url('images/loading.gif') center no-repeat transparent;
+}
+
+.loading-more{
+	background: url('images/loading_more.gif') 0 0 no-repeat transparent;
+}
+
+.tab-content .load-more a{
+	padding-left: 30px;
+	padding-bottom: 5px;
+}
+
+.box-products .alignleft{
+	float: left;
+}
+
+.box-products .alignright{
+	float: right;
+}

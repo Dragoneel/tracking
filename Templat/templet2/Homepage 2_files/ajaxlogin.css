@@ -1,0 +1,204 @@
+.modal-sm {
+    width: 369px;
+}
+.ves-ajaxlogin {
+    margin-top: 40px;
+}
+.ves-ajaxlogin .btn-group {
+    line-height: 35px;
+    margin-right: 60px;
+}
+.rtl .ves-ajaxlogin .btn-group {
+    margin-left: 60px;
+    margin-right: inherit;
+}
+.ves-ajaxlogin .btn-group .dropdown-toggle {
+    color: white;
+}
+.ves-ajaxlogin .btn-group .dropdown-toggle .btn-icon {
+    background: url("../images/icon-topbar.png") repeat scroll center center rgba(0, 0, 0, 0.5);
+    display: block;
+    float: left;
+    height: 35px;
+    margin-right: 5px;
+    width: 35px;
+}
+.rtl .ves-ajaxlogin .btn-group .dropdown-toggle .btn-icon {
+    float: right !important;
+}
+.rtl .ves-ajaxlogin .btn-group .dropdown-toggle .btn-icon {
+    margin-left: 5px;
+    margin-right: inherit;
+}
+.ves-ajaxlogin .btn-group .dropdown-toggle .title {
+    color: #999999;
+    display: block;
+    float: left;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.rtl .ves-ajaxlogin .btn-group .dropdown-toggle .title {
+    float: right !important;
+}
+.ves-ajaxlogin .btn-group .dropdown-menu {
+    background: none repeat scroll 0 0 #cd3e40;
+    left: 0;
+    padding: 40px 20px 0;
+    text-align: left;
+    top: -2px;
+    z-index: 999;
+}
+.rtl .ves-ajaxlogin .btn-group .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+.rtl .ves-ajaxlogin .btn-group .dropdown-menu {
+    text-align: right !important;
+}
+.ves-ajaxlogin .btn-group .dropdown-menu a, .ves-ajaxlogin .btn-group .dropdown-menu span {
+    color: white;
+    font-size: 11px;
+}
+.ves-ajaxlogin .btn-group .dropdown-menu a:hover, .ves-ajaxlogin .btn-group .dropdown-menu span:hover {
+    color: black;
+}
+.ves-ajaxlogin .btn-group:hover, .ves-ajaxlogin .btn-group:focus, .ves-ajaxlogin .btn-group.focus-enable {
+    cursor: pointer;
+}
+.ves-ajaxlogin .btn-group:hover .btn-icon, .ves-ajaxlogin .btn-group:focus .btn-icon, .ves-ajaxlogin .btn-group.focus-enable .btn-icon {
+    background-color: #cd3e40;
+    background-image: url("../images/icon-topbar-white.png");
+}
+.ves-ajaxlogin .btn-group:hover .title, .ves-ajaxlogin .btn-group:focus .title, .ves-ajaxlogin .btn-group.focus-enable .title {
+    color: white;
+}
+.ves-ajaxlogin .btn-group:hover .dropdown-toggle, .ves-ajaxlogin .btn-group:focus .dropdown-toggle, .ves-ajaxlogin .btn-group.focus-enable .dropdown-toggle {
+    position: relative;
+    z-index: 9999;
+}
+.ves-ajaxlogin .btn-group:hover .dropdown-toggle .btn-icon, .ves-ajaxlogin .btn-group:focus .dropdown-toggle .btn-icon, .ves-ajaxlogin .btn-group.focus-enable .dropdown-toggle .btn-icon {
+    background-color: #cd3e40;
+}
+.ves-ajaxlogin .btn-group:hover .dropdown-menu, .ves-ajaxlogin .btn-group:focus .dropdown-menu, .ves-ajaxlogin .btn-group.focus-enable .dropdown-menu {
+    display: block !important;
+}
+.ves-ajaxlogin .quick-login {
+    color: white;
+    font-size: 11px;
+    line-height: normal;
+}
+.ves-ajaxlogin .quick-login label {
+    color: white;
+    font-size: 11px;
+    margin: 0;
+}
+.ves-ajaxlogin .quick-login form#login_form_quick {
+    padding: 0 15px;
+}
+.ves-ajaxlogin .quick-login form#login_form_quick input {
+    border-radius: 2px;
+    width: 180px;
+}
+.ves-ajaxlogin .quick-login form#login_form_quick p {
+    color: white;
+    font-size: 11px;
+}
+.ves-ajaxlogin .quick-login form#login_form_quick p a {
+    text-decoration: underline;
+}
+.ves-ajaxlogin .quick-login form#login_form_quick button:hover span {
+    color: #cd3e40;
+}
+/*end for ajaxlogin_hover*/
+
+#header-account { position:relative; }
+
+.ves-window-outside { position:relative; }
+.ves-window-outside .close { cursor:pointer; text-align:center; width: 40px;
+    float:right; display: block; color: #636363; text-decoration:none;
+    font-weight:normal; font-size:30px; position:absolute;  top:-13px;
+    right:-10px;
+}
+
+/* Desktop or TV **************************************************************/
+@media only screen and (min-width: 771px) {
+    #header-account {
+        width:350px !important;
+    }
+    .ves-register-window,
+    .ves-login-window { display:none; width:350px; z-index:9998; padding:0; }
+    .ves-window-outside { margin:20px; }
+    .ves-window-box .input-fly input[type="text"],
+    .ves-window-box .input-fly input[type="password"] {
+        width:306px;
+    }
+    .ves-forgot-password a { text-align:right !important; }
+    .yoauam-switch-window { text-align:center; padding:5px; display:inline; }
+}
+/******************************************************************************/
+
+/* Tablet *********************************************************************/
+@media only screen and (max-width: 771px) {
+    .ves-register-window,
+    .ves-login-window {
+        width:400px; padding:10px 30px;
+    }
+    .ves-forgot-password a { text-align:right !important; }
+    .yoauam-switch-window { text-align:center; padding:5px; display:inline; }
+}
+@media only screen and (max-width: 670px) {
+    .ves-register-window,
+    .ves-login-window {
+        width:400px; padding:10px 30px;
+    }
+    .yoauam-switch-window { text-align:center; display:block; padding:0; }
+    .ves-forgot-password a { text-align:center !important; }
+}
+/******************************************************************************/
+
+/* Mobile *********************************************************************/
+@media only screen and (max-width: 480px) {
+    .ves-register-window,
+    .ves-login-window {
+        width:auto; padding:15px;
+    }
+    .yoauam-switch-window { text-align:center; display:block; padding:0; }
+    .ves-window-box .input-fly input[type="text"],
+    .ves-window-box .input-fly input[type="password"] {
+        width:100%;
+    }
+}
+/******************************************************************************/
+
+.ves-ajaxlogin-loader {
+    display:none; position:absolute; top:50%; left:50%; margin-left:-20px;
+    margin-top:-15px; height:31px; width:40px; z-index:9999;
+    background: url('loader.gif') no-repeat center center;
+}
+.ves-window-title h3 { display:inline; margin:0; color:#3399cc; }
+.yoauam-switch-window {
+    cursor:pointer; color:#3399cc; line-height:33px;
+}
+.ves-window-box { margin-top:15px; }
+.ves-window-subtitle p {
+    margin:20px 0 5px 0; width:100%; font-size:14px; font-weight:bold; color:#888;
+    border-bottom:1px solid #3399cc;
+}
+.ves-window-box .input-fly { padding:5px 0; width:100% }
+.ves-window-box .input-fly label { font-size:14px; line-height:26px; }
+.ves-window-box .input-fly input[type="text"],
+.ves-window-box .input-fly input[type="password"] {
+    font-size:15px; padding:3px; height:40px;
+}
+.ves-ajaxlogin-error { color:#eb340a; }
+.err-licence {  }
+.err-newsletter {  }
+.ves-window-box label a { display:inline !important; padding:0 !important; }
+.ves-window-box .input-fly-checkbox input { margin:7px 7px 0 0; }
+.ves-window-box .input-fly-checkbox label { font-size:12px; width:auto; }
+.ves-window-box .input-fly .ves-ajaxlogin-error { }
+.ves-window-box .input-fly-checkbox .ves-ajaxlogin-error { text-align:left; }
+.ves-window-box .box-contents {  }
+.ves-window-box .box-contents-button { width:100%; margin-top:20px; }
+.ves-window-box .box-contents-button button { }
+.ves-window-box .ves-forgot-password { margin-top:10px; }

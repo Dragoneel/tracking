@@ -1,0 +1,120 @@
+.floor-fixed-panel .active{
+    background: #f3124a;
+}
+.floor-fixed-panel .active i{
+    color: #FFF;
+}
+.floor-fixed-panel {
+    background-color: #fff;
+    border: medium none;
+    position: absolute;
+    width: 30px;
+    visibility: hidden;
+    z-index: 10000;
+}
+.floor-fixed-panel li {
+    height: 30px;
+    list-style: outside none none;
+    margin-left: 0;
+}
+.floor-fixed-panel li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    padding: 0px;
+}
+.floor-fixed-panel li span {
+    color: #fff;
+    display: none;
+    font-size: 13px;
+    margin-left: 30px;
+    padding: 0 10px 0 0;
+    white-space: nowrap;
+}
+.floor-fixed-panel li i {
+    content: "";
+    display: block;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+.floor-fixed-panel li a:hover {
+    background-color: #f3124a;
+    position: absolute;
+    text-decoration: none;
+    z-index: 9;
+    color: #FFF;
+}
+.floor-fixed-panel li a:hover i {
+    color: #FFF;
+    padding-top: 8px;
+    z-index: 10;    
+}
+.floor-fixed-panel li a:hover span {
+    display: block;
+}
+.floor-fixed-panel li a.current {
+    background-color: #f3124a;
+    min-width: 30px;
+    z-index: 9;
+}
+.floor-fixed-panel li a.current i {
+    background-position: 7px -47px;
+}
+
+@media (min-width: 1020px) and (max-width: 1259px) {
+}
+@media (max-width: 1019px) {
+.recommend-box {
+    display: none;
+}
+.rec-industry-list {
+    width: 50%;
+}
+.brand-box {
+    display: block !important;
+    width: 25%;
+}
+.indutry-info {
+    width: 25%;
+}
+.rec-industry-right-list {
+    display: block !important;
+    width: 25%;
+}
+}
+@media (min-width: 761px) and (max-width: 920px) {
+}
+@media (max-width: 760px) {
+.brand-box {
+    display: none !important;
+}
+.rec-industry-right-list {
+    display: none !important;
+}
+.rec-industry-list {
+    width: 66.6667%;
+}
+.indutry-info {
+    width: 33.3333%;
+}
+}
+
+/**/
+.floor-fixed-panel{ visibility: hidden; }
+ #j-floor-fixed-panel.affix-top,  #j-floor-fixed-panel.affix-bottom {
+    visibility: hidden;
+}
+#j-floor-fixed-panel.affix-bottom {
+    top: 0px!important;
+}
+
+#j-floor-fixed-panel.affix {
+    visibility: visible;
+    top: 120px!important;
+}

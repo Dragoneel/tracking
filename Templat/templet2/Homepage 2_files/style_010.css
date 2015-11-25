@@ -1,0 +1,133 @@
+
+/*Updated new version for megamenu: Offset canvas sidebar menu*/
+.menu-offcanvas-inner {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#menu-offcanvas .close-mobile-nav.close-block {
+  font-size: 20px;
+  line-height: 48px;
+  text-transform: uppercase;
+  padding-left: 13px;
+  position: relative;
+  color: #FFF;
+}
+#menu-offcanvas .menu-navigation{
+  position: relative;
+  width: 100%;
+}
+#menu-offcanvas .close-mobile-nav.close-block .sidebar-logo-search{
+  padding-right: 25px;
+}
+#menu-offcanvas .close-mobile-nav.close-block .button-close-menu {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  display: block;
+  line-height: 50px;
+  margin-top: -25px;
+  cursor: pointer;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+#menu-offcanvas .menu-footer{
+  padding-bottom: 20px;
+  text-align: center;
+  clear:both;
+}
+#menu-offcanvas .menu-footer::after {
+  clear:both;
+}
+#menu-offcanvas .menu-footer .social-icons {
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+#menu-offcanvas .menu-footer .copyright {
+  color: #fff;
+  font-weight: 400;
+  margin-top: 23px;
+}
+#menu-offcanvas .menu-footer .social-icon {
+  display: table-cell;
+  border: 1px solid rgba(235,235,235,0.07);
+  border-left: none;
+  text-align: center;
+  font-size: 17px;
+  line-height: 49px;
+  min-width: 40px;
+  margin: 0;
+  color: #FFF;
+}
+#menu-offcanvas .menu-footer .social-icon:hover{
+  color: #188fcc;
+}
+span.open-child {
+  font-size: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  margin-top: 3px;
+  z-index: 1;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+color: #FFF;
+}
+.dropdown-submenu span.open-child {
+  right: 17px;
+}
+span.open-child:after {
+  content: "+";
+  font-size: 20px;
+  text-align: center;
+  background: transparent;
+  opacity: 1;
+}
+.over > span.open-child:after {
+  content: "\2212";
+}
+#menu-offcanvas .menu-offcanvas-content .dropdown{
+  position:relative;
+}
+#menu-offcanvas .dropdown-menu.in {
+    display: none;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+    height: auto;
+   -webkit-transition: none;
+   transition: none;
+    transform: translateX(0);
+}
+#menu-offcanvas .menu-offcanvas-content .dropdown .dropdown-menu{ 
+  background: transparent;
+}
+#menu-offcanvas .menu-offcanvas-content .dropdown .dropdown-toggle{
+  height: 47px;
+}
+@media only screen and (min-width : 768px) {
+    /* Make Navigation Toggle on Desktop Hover */
+    #menu-offcanvas .dropdown:hover > .dropdown-menu, #menu-offcanvas .dropdown-submenu:hover > .dropdown-menu, .mobile-nav .dropdown:hover > .dropdown-menu, .mobile-nav .dropdown-submenu:hover > .dropdown-menu {
+      display: none;
+    }
+    #mainmenutop .dropdown:hover > .dropdown-menu, #mainmenutop .dropdown-submenu:hover > .dropdown-menu {
+      display: block!important;
+      opacity: 1;
+      filter: alpha(opacity=100);
+      transform: translateX(0);
+      visibility: visible;
+      height: auto;
+    }
+}
+/*End Update At Here*/
+
+#menu-offcanvas .button-close-menu{ background: transparent!important;}
+#menu-offcanvas .dropdown .dropdown-menu{ display: none; }
+#menu-offcanvas .dropdown .dropdown-menu .dropdown-menu-inner ul li a{ color: #fff;}
+#menu-offcanvas .ves-widget{ color: #fff;}

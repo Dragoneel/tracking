@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic);
+@font-face {
+    font-family: 'fashionista';
+    src: url('fonts/im-fashionistademo-version.eot');
+    src: url('fonts/im-fashionistademo-version.eot?#iefix') format('embedded-opentype'),
+         url('fonts/im-fashionistademo-version.woff2') format('woff2'),
+         url('fonts/im-fashionistademo-version.woff') format('woff'),
+         url('fonts/im-fashionistademo-version.ttf') format('truetype'),
+         url('fonts/im-fashionistademo-version.svg#fashionista') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
